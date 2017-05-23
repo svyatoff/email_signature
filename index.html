@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Email signature generator</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.1/css/bulma.min.css">
+</head>
+<body>
+	<section class="section">
+		<div class="container">
+			<div class="heading">
+				<h1 class="title">Generate your branded signature:</h1>
+				<div class="content">
+					<ol>
+						<li>Fill out all the fields below that are applicable.</li>
+						<li>Proceed to instructions for your client (thunderbird or gmail) below "signatures" section.</li>
+					</ol>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section">
+		<div class="container">
+			<div class="columns">
+				<div class="column">
+					<h3 class="title">Your information:</h3>
+					<form id="form">
+						<div class="field is-horizontal">
+							<div class="field-label is-normal">
+								<label class="label" for="name">Name:</label> 
+							</div>
+							<div class="field-body">
+								<div class="field">
+									<p class="control">
+										<input id="name" class="input" placeholder="First & Last Name">
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="field is-horizontal">
+							<div class="field-label is-normal">
+								<label class="label" for="position">Position:</label>
+							</div>
+							<div class="field-body">
+								<div class="field">
+									<p class="control">
+										<input id="position" class="input" placeholder="This is what I do">
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="field is-horizontal">
+							<div class="field-label is-normal">
+								<label class="label" for="phone">Phone:</label>
+							</div>
+							<div class="field-body">
+								<div class="field">
+									<p class="control">
+										<input id="phone" class="input" placeholder="937-555-5555">
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="field is-horizontal">
+							<div class="field-label is-normal">
+								<label class="label" for="cell">Mobile:</label>
+							</div>
+							<div class="field-body">
+								<div class="field">
+									<p class="control">
+										<input id="cell" class="input" placeholder="937-555-5555">
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="field is-horizontal">
+							<div class="field-label is-normal">
+								<label class="label" for="email">Email:</label>
+							</div>
+							<div class="field-body">
+								<div class="field">
+									<p class="control">
+										<input id="email" class="input" placeholder="name@gmail.com">
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="field is-horizontal">
+							<div class="field-label is-normal">
+								<label class="label" for="facebook">Facebook:</label>
+							</div>
+							<div class="field-body">
+								<div class="field">
+									<p class="control">
+										<input id="facebook" class="input" placeholder="http://facebook.com/user/">
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="field is-horizontal">
+							<div class="field-label is-normal">
+								<label class="label" for="twitter">Twitter:</label>
+							</div>
+							<div class="field-body">
+								<div class="field">
+									<p class="control">
+										<input id="twitter" class="input" placeholder="http://twitter.com/user/">
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="field is-horizontal">
+							<div class="field-label is-normal">
+								<label class="label" for="linkedin">LinkedIn:</label>
+							</div>
+							<div class="field-body">
+								<div class="field">
+									<p class="control">
+										<input id="linkedin" class="input" placeholder="http://linkedin.com/user/">
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="field is-horizontal">
+							<div class="field-label is-normal">
+								<label class="label" for="image">Banner:</label>
+							</div>
+							<div class="field-body">
+								<div class="field">
+									<p class="control">
+										<input id="image" class="input" placeholder="http://i.imgur.com/X28rxZd.gif">
+										<p class="help">Service for hosting images <a href="http://imgur.com/">imgur.com</a></p>
+									</p>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="column">
+					<h3 class="title">Preview:</h3>
+					<article class="message is-primary">
+						<div class="message-body" id="signature_container">
+							<table cellspacing="0" cellpadding="0" id="signature">
+								<tr>
+									<td style="padding-left:10px; color:#555; font-family:Helvetica, Arial, sans-serif; font-size:12px; line-height:16px; " >
+										<span class="name" style="color:#61bc00; font-weight:bold;">
+											Name
+										</span><br>
+										<span class="position">
+											Specialist in...
+										</span>
+										<br>
+										<span class="phone">
+											(937) 555-5555
+										</span>
+										<span class="cell">
+											(937) 555-5555
+										</span>
+										<br>
+										<span style="white-space:nowrap">
+											<a class="email" href="mailto:name@gmail.com" style="color: #555; text-decoration:none;">
+												name@gmail.com
+											</a>
+										</span>
+										<br>
+										<br>
+										<span style="white-space:nowrap">
+											<img src="http://i.imgur.com/r5fuAxi.png" class="logo">
+										</span>
+										<br>
+										<br>
+										<a href="https://maxpay.com" style="text-decoration: none; color: transparent;">
+											<img shrinktofit="true" src="http://i.imgur.com/Cx7gGUX.gif" class="image" height="60" width="600">
+										</a>
+										<hr>
+										<table cellspacing="0" cellpadding="0">
+											<tr>
+												<td style="width: 15%;vertical-align: middle;">
+													<font size="4" color="gray" face="Arial">Follow us:&nbsp;</font><span class="Apple-converted-space"></span>
+												</td>
+												<td style="vertical-align: middle;">
+													<a style="text-decoration: none; color: transparent; margin-top: 5px;" class="facebook" href="https://www.facebook.com/maxpayltd/">
+														<img shrinktofit="true" src="http://i.imgur.com/eRHmBUL.png" height="24" width="24">
+													</a>
+													<span class="Apple-converted-space">&nbsp;</span>
+													<a style="text-decoration: none; color: transparent; margin-top: 5px;" class="twitter" href="https://twitter.com/maxpay_ltd">
+														<img shrinktofit="true" src="http://i.imgur.com/fEntS1v.png" height="24" width="24">
+													</a>
+													<span class="Apple-converted-space">&nbsp;</span>
+													<a style="text-decoration: none; color: transparent; margin-top: 5px;" class="linkedin" href="https://www.linkedin.com/company/maxpay-ltd">
+														<img shrinktofit="true" src="http://i.imgur.com/XpJEfsD.png" height="24" width="24">
+													</a>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</div>
+					</article>
+					<h3 class="title">Signatures:</h3>
+					<div class="controls">
+						<button class="button is-primary" data-select data-signature="signature">Select Signature (for Gmail)</button>
+						<button class="button is-info" data-prepare data-signature="signature">Prepare HTML (for Thunderbird)</button>
+						<a class="button is-primary is-hidden" data-load download="NRG_signature.htm">Save HTML to file</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section">
+		<div class="container">
+			<article class="message is-info">
+				<div class="message-header">
+					Email client instructions
+				</div>
+				<div class="message-body content">
+					<div class="columns">
+						<div class="column">
+							<h4 class="title">Adding the signature to Gmail:</h4>
+							<div class="instructions">
+								<p>Visit help page <a href="https://support.google.com/mail/answer/8395?co=GENIE.Platform%3DDesktop&hl=en">https://support.google.com/mail/answer/8395?co=GENIE.Platform%3DDesktop&amp;hl=en</a></p>
+								<p>Or below is a quick gif that illustrates the steps above.</p>
+								<img src="http://i.imgur.com/DH82U74.gif">
+							</div>
+						</div>
+						<div class="column">
+							<h4 class="title">Adding the signature to Thunderbird:</h4>
+							<div class="instructions">
+								<p>Visit help page <a href="https://support.mozilla.org/en-US/kb/signatures">https://support.mozilla.org/en-US/kb/signatures</a></p>
+								<p>Or below is a quick gif that illustrates the steps above.</p>
+								<img src="https://facemail.click/uploads/2016/03/image31.gif">
+							</div>
+						</div>
+					</div>
+				</div>
+			</article>
+		</div>
+	</section>
+	<script src="js/main.js"></script>
+</body>
+</html>
