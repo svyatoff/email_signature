@@ -13,7 +13,9 @@
 				<div class="content">
 					<ol>
 						<li>Fill out all the fields below that are applicable.</li>
-						<li>Proceed to instructions for your client (thunderbird or gmail) below "signatures" section.</li>
+						<li>
+							Proceed to instructions for your client (thunderbird or gmail) below "signatures" section.
+						</li>
 					</ol>
 				</div>
 			</div>
@@ -30,8 +32,13 @@
 								<label class="label" for="name">Name:</label> 
 							</div>
 							<div class="field-body">
-								<div class="field">
-									<p class="control">
+								<div class="field has-addons has-addons-centered">
+									<!--<p class="control">-->
+										<!--<label class="button is-static">-->
+											<!--<input id="checkName" type="checkbox" checked>-->
+										<!--</label>-->
+									<!--</p>-->
+									<p class="control is-expanded">
 										<input id="name" class="input" placeholder="First & Last Name">
 									</p>
 								</div>
@@ -42,8 +49,13 @@
 								<label class="label" for="position">Position:</label>
 							</div>
 							<div class="field-body">
-								<div class="field">
-									<p class="control">
+								<div class="field has-addons has-addons-centered">
+									<!--<p class="control">-->
+										<!--<label class="button is-static">-->
+											<!--<input id="checkPosition" type="checkbox" checked>-->
+										<!--</label>-->
+									<!--</p>-->
+									<p class="control is-expanded">
 										<input id="position" class="input" placeholder="This is what I do">
 									</p>
 								</div>
@@ -54,8 +66,13 @@
 								<label class="label" for="phone">Phone:</label>
 							</div>
 							<div class="field-body">
-								<div class="field">
-									<p class="control">
+								<div class="field has-addons has-addons-centered">
+									<!--<p class="control">-->
+										<!--<label class="button is-static">-->
+											<!--<input id="checkPhone" type="checkbox" checked>-->
+										<!--</label>-->
+									<!--</p>-->
+									<p class="control is-expanded">
 										<input id="phone" class="input" placeholder="937-555-5555">
 									</p>
 								</div>
@@ -66,8 +83,13 @@
 								<label class="label" for="cell">Mobile:</label>
 							</div>
 							<div class="field-body">
-								<div class="field">
-									<p class="control">
+								<div class="field has-addons has-addons-centered">
+									<!--<p class="control">-->
+										<!--<label class="button is-static">-->
+											<!--<input id="checkCell" type="checkbox" checked>-->
+										<!--</label>-->
+									<!--</p>-->
+									<p class="control is-expanded">
 										<input id="cell" class="input" placeholder="937-555-5555">
 									</p>
 								</div>
@@ -78,8 +100,13 @@
 								<label class="label" for="email">Email:</label>
 							</div>
 							<div class="field-body">
-								<div class="field">
-									<p class="control">
+								<div class="field has-addons has-addons-centered">
+									<!--<p class="control">-->
+										<!--<label class="button is-static">-->
+											<!--<input id="checkEmail" type="checkbox" checked>-->
+										<!--</label>-->
+									<!--</p>-->
+									<p class="control is-expanded">
 										<input id="email" class="input" placeholder="name@gmail.com">
 									</p>
 								</div>
@@ -90,8 +117,13 @@
 								<label class="label" for="facebook">Facebook:</label>
 							</div>
 							<div class="field-body">
-								<div class="field">
-									<p class="control">
+								<div class="field has-addons has-addons-centered">
+									<!--<p class="control">-->
+										<!--<label class="button is-static">-->
+											<!--<input id="checkFacebook" type="checkbox" checked>-->
+										<!--</label>-->
+									<!--</p>-->
+									<p class="control is-expanded">
 										<input id="facebook" class="input" placeholder="http://facebook.com/user/">
 									</p>
 								</div>
@@ -102,8 +134,13 @@
 								<label class="label" for="twitter">Twitter:</label>
 							</div>
 							<div class="field-body">
-								<div class="field">
-									<p class="control">
+								<div class="field has-addons has-addons-centered">
+									<!--<p class="control">-->
+										<!--<label class="button is-static">-->
+											<!--<input id="checkTwitter" type="checkbox" checked>-->
+										<!--</label>-->
+									<!--</p>-->
+									<p class="control is-expanded">
 										<input id="twitter" class="input" placeholder="http://twitter.com/user/">
 									</p>
 								</div>
@@ -114,8 +151,13 @@
 								<label class="label" for="linkedin">LinkedIn:</label>
 							</div>
 							<div class="field-body">
-								<div class="field">
-									<p class="control">
+								<div class="field has-addons has-addons-centered">
+									<!--<p class="control">-->
+										<!--<label class="button is-static">-->
+											<!--<input id="checkLinkedin" type="checkbox" checked>-->
+										<!--</label>-->
+									<!--</p>-->
+									<p class="control is-expanded">
 										<input id="linkedin" class="input" placeholder="http://linkedin.com/user/">
 									</p>
 								</div>
@@ -126,10 +168,17 @@
 								<label class="label" for="image">Banner:</label>
 							</div>
 							<div class="field-body">
-								<div class="field">
+								<div class="field has-addons has-addons-centered">
 									<p class="control">
-										<input id="image" class="input" placeholder="http://i.imgur.com/X28rxZd.gif">
-										<p class="help">Service for hosting images <a href="http://imgur.com/">imgur.com</a></p>
+										<label class="button is-static" title="Check when need insert banner">
+											<input id="checkImage" type="checkbox">
+										</label>
+									</p>
+									<p class="control is-expanded">
+										<input id="image" class="input" placeholder="http://i.imgur.com/X28rxZd.gif" disabled>
+										<span class="help">
+											Service for hosting images <a href="http://imgur.com/">imgur.com</a>
+										</span>
 									</p>
 								</div>
 							</div>
@@ -167,28 +216,34 @@
 										<span style="white-space:nowrap">
 											<img src="http://i.imgur.com/r5fuAxi.png" class="logo">
 										</span>
-										<br>
-										<br>
-										<a href="https://maxpay.com" style="text-decoration: none; color: transparent;">
-											<img shrinktofit="true" src="http://i.imgur.com/Cx7gGUX.gif" class="image" height="60" width="600">
-										</a>
+										<span id="imageWrap"></span>
 										<hr>
 										<table cellspacing="0" cellpadding="0">
 											<tr>
 												<td style="width: 15%;vertical-align: middle;">
-													<font size="4" color="gray" face="Arial">Follow us:&nbsp;</font><span class="Apple-converted-space"></span>
+													<font size="4" color="gray" face="Arial">Follow us:&nbsp;</font>
+													<span class="Apple-converted-space"></span>
 												</td>
 												<td style="vertical-align: middle;">
-													<a style="text-decoration: none; color: transparent; margin-top: 5px;" class="facebook" href="https://www.facebook.com/maxpayltd/">
-														<img shrinktofit="true" src="http://i.imgur.com/eRHmBUL.png" height="24" width="24">
+													<a style="text-decoration: none; color: transparent; margin-top: 5px;" class="facebook"
+													   href="https://www.facebook.com/maxpayltd/">
+														<img shrinktofit="true"
+															 src="http://i.imgur.com/eRHmBUL.png"
+															 height="24" width="24">
 													</a>
 													<span class="Apple-converted-space">&nbsp;</span>
-													<a style="text-decoration: none; color: transparent; margin-top: 5px;" class="twitter" href="https://twitter.com/maxpay_ltd">
-														<img shrinktofit="true" src="http://i.imgur.com/fEntS1v.png" height="24" width="24">
+													<a style="text-decoration: none; color: transparent; margin-top: 5px;" class="twitter"
+													   href="https://twitter.com/maxpay_ltd">
+														<img shrinktofit="true"
+															 src="http://i.imgur.com/fEntS1v.png"
+															 height="24" width="24">
 													</a>
 													<span class="Apple-converted-space">&nbsp;</span>
-													<a style="text-decoration: none; color: transparent; margin-top: 5px;" class="linkedin" href="https://www.linkedin.com/company/maxpay-ltd">
-														<img shrinktofit="true" src="http://i.imgur.com/XpJEfsD.png" height="24" width="24">
+													<a style="text-decoration: none; color: transparent; margin-top: 5px;" class="linkedin"
+													   href="https://www.linkedin.com/company/maxpay-ltd">
+														<img shrinktofit="true"
+															 src="http://i.imgur.com/XpJEfsD.png"
+															 height="24" width="24">
 													</a>
 												</td>
 											</tr>
@@ -200,9 +255,15 @@
 					</article>
 					<h3 class="title">Signatures:</h3>
 					<div class="controls">
-						<button class="button is-primary" data-select data-signature="signature">Select Signature (for Gmail)</button>
-						<button class="button is-info" data-prepare data-signature="signature">Prepare HTML (for Thunderbird)</button>
-						<a class="button is-primary is-hidden" data-load download="NRG_signature.htm">Save HTML to file</a>
+						<button class="button is-primary" data-select data-signature="signature">
+							Select Signature (for Gmail)
+						</button>
+						<button class="button is-info" data-prepare data-signature="signature">
+							Prepare HTML (for Thunderbird)
+						</button>
+						<a class="button is-primary is-hidden" data-load download="NRG_signature.htm">
+							Save HTML to file
+						</a>
 					</div>
 				</div>
 			</div>

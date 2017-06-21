@@ -2,7 +2,7 @@ const gulp = require('gulp');
 const browserSync = require('browser-sync');
 const reload = browserSync.reload;
 const paths = {
-	html: ['src/frontend/index.html'],
+	html: ['index.html'],
 	js: ['js/*.js']
 };
 
