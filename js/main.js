@@ -14,7 +14,6 @@
     }
 
     banner.addEventListener('click', function () {
-        console.log(this.checked);
         if (!this.checked) {
             bannerInput.disabled = true;
             removeBanner();
@@ -55,7 +54,7 @@
         var value = e.target.value;
         var element = doc.querySelector('.' + id);
         var checkBanner = banner.checked;
-        console.log(this, checkBanner);
+
         if (id === 'email') {
             element.href = 'mailto:' + value;
             element.innerHTML = value;
@@ -88,7 +87,6 @@
         download.href = 'data:text/html, ' + html;
         download.classList.remove('is-hidden');
         prepare.classList.add('is-hidden');
-        console.log('prepareHTML', html);
     }
 
     // from SO: http://stackoverflow.com/a/987376/1592915
