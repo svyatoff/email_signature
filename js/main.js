@@ -4,7 +4,6 @@
     var select = doc.querySelector('[data-select]');
     var prepare = doc.querySelector('[data-prepare]');
     var download = doc.querySelector('[data-load]');
-    var html = doc.querySelector('#signature_container').innerHTML;
     var banner = doc.querySelector('#checkImage');
     var bannerWrap = doc.querySelector('#imageWrap');
 	var bannerInput = doc.querySelector('#image');
@@ -84,6 +83,7 @@
         selectText(element);
     }
     function prepareHTML(event) {
+        var html = doc.querySelector('#signature_container').innerHTML;
         download.href = 'data:text/html, ' + html;
         download.classList.remove('is-hidden');
         prepare.classList.add('is-hidden');
